@@ -24,9 +24,19 @@ function App() {
     ]) // definit os todos em um state para armazenar os dados iniciais
   return (
     <div className="App">
+      <h1>Lista de Tarefas</h1>
       <header className="App-header">
         {todos.map((todo) => (
-            <p>{todo.texto}</p>
+          <div>
+            <div className='lista'>
+              <p>{todo.id} -{todo.texto}</p>
+              <p>{todo.categoria}</p>
+            </div>
+            <div className='add'>
+              <p>Completar</p>
+              <button>X</button>
+            </div>
+          </div>
         ))}
       </header>
     </div>
