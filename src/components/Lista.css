@@ -1,27 +1,20 @@
 .App {
-    max-width: 600px;
+    /*max-width: 600px;
     margin: 0 auto;
-    background-color: #efefef;
+    background-color: #efefef;*/
   }
   
 
   .App-header {
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     display: flex;
   }
-
-  .lista{
-    display: flex;
-    flex-direction: column;
-  }
+  
 
   .add{
-      display: flex;
-      flex-direction: row;
       align-items: center;
+      flex-direction: row;
   }
   
   .App-link {

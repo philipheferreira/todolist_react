@@ -27,14 +27,14 @@ function App() {
       <h1>Lista de Tarefas</h1>
       <header className="App-header">
         {todos.map((todo) => (
-          <div>
-            <div className='lista'>
-              <p>{todo.id} -{todo.texto}</p>
+          <div className=''>
+            <div className=''>
+              <p>{todo.id} - {todo.texto} </p>
               <p>{todo.categoria}</p>
             </div>
             <div className='add'>
-              <p>Completar</p>
-              <button>X</button>
+              <button className='completo'>Completar</button>
+              <button className='deletar'>X</button>
             </div>
           </div>
         ))}
